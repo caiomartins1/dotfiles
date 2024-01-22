@@ -1,0 +1,179 @@
+{
+  // open json editor for settings
+  "workbench.settings.editor": "json",
+
+  // Theme
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Aura Dark",
+
+  // Font
+  "editor.fontFamily": "Geist Mono",
+  "scm.inputFontFamily": "Geist Mono",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "chat.editor.fontFamily": "Geist Mono",
+  "debug.console.fontFamily": "Geist Mono",
+  "editor.codeLensFontFamily": "Geist Mono",
+  "notebook.output.fontFamily": "Geist Mono",
+  "markdown.preview.fontFamily": "Geist Mono",
+  "editor.inlayHints.fontFamily": "Geist Mono",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+
+  // UI
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
+  "window.titleBarStyle": "custom",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.lineNumbers": "relative",
+  "editor.wrappingIndent": "none",
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+  "workbench.layoutControl.enabled": false,
+  "symbols.hidesExplorerArrows": false,
+  "workbench.startupEditor": "none",
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+
+  // Code
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.inlineSuggest.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.limit.value": 4,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+
+  // Languages
+  "[elixir]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[graphql]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "GraphQL.vscode-graphql"
+  },
+
+  // Prettier
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+
+  // APC UI Customizations
+  "apc.font.family": "Geist Mono",
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 24
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 22,
+    "fontSize": 12
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 8,
+      "y": 10
+    }
+  },
+  "apc.header": {
+    "height": 34,
+    "fontSize": 14
+  },
+  "apc.listRow": {
+    "height": 21,
+    "fontSize": 13
+  },
+
+  // VIM
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "]"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["leader", "["],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "w"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "git.openRepositoryInParentFolders": "always"
+}
